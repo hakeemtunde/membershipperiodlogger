@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+  <base>CRM/Membershipperiod</base>
+  <class>MembershipPeriodPayment</class>
+  <name>civicrm_membership_period_payment</name>
+  <comment>Membership period payment</comment>
+  <add>4.4</add>
+  <log>true</log>
+
+  <field>
+    <name>id</name>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>Unique Membership Period Payment ID</comment>
+    <add>4.4</add>
+  </field>
+  <primaryKey>
+    <name>id</name>
+    <autoincrement>true</autoincrement>
+  </primaryKey>
+
+  <field>
+    <name>membership_period_id</name>
+    <type>int unsigned</type>
+    <comment>FK to Membership Period </comment>
+    <add>4.4</add>
+  </field>
+  <foreignKey>
+    <name>membership_period_id</name>
+    <table>civicrm_membership_period</table>
+    <key>id</key>
+    <add>4.4</add>
+    <onDelete>CASCADE</onDelete>
+  </foreignKey>
+
+  <field>
+    <name>contribution_id</name>
+    <type>int unsigned</type>
+    <comment>FK to Contribution</comment>
+    <add>4.4</add>
+  </field>
+  <foreignKey>
+    <name>contribution_id_id</name>
+    <table>civicrm_contribution</table>
+    <key>id</key>
+    <add>4.4</add>
+    <onDelete>CASCADE</onDelete>
+  </foreignKey>
+</table>

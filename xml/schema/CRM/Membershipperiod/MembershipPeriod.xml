@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+  <base>CRM/Membershipperiod</base>
+  <class>MembershipPeriod</class>
+  <name>civicrm_membership_period</name>
+  <comment>Stores membership period log</comment>
+  <add>4.4</add>
+  <log>true</log>
+
+  <field>
+    <name>id</name>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>Unique Membership Period ID</comment>
+    <add>4.4</add>
+  </field>
+  <primaryKey>
+    <name>id</name>
+    <autoincrement>true</autoincrement>
+  </primaryKey>
+
+  <field>
+    <name>membership_id</name>
+    <type>int unsigned</type>
+    <comment>FK to Membership</comment>
+    <add>4.4</add>
+  </field>
+  <foreignKey>
+    <name>membership_id</name>
+    <table>civicrm_membership</table>
+    <key>id</key>
+    <add>4.4</add>
+    <onDelete>CASCADE</onDelete>
+  </foreignKey>
+
+  <field>
+    <name>period</name>
+    <type>int unsigned</type>
+    <comment>period count</comment>
+    <add>4.4</add>
+  </field>
+
+  <field>
+    <name>start_date</name>
+    <type>date</type>
+    <comment>start date</comment>
+    <add>4.4</add>
+  </field>
+
+  <field>
+    <name>end_date</name>
+    <type>date</type>
+    <comment>end date</comment>
+    <add>4.4</add>
+  </field>
+
+  <field>
+    <name>has_payment</name>
+    <type>int unsigned</type>
+    <comment>indicationki membership period has payment </comment>
+    <add>4.4</add>
+  </field>
+
+</table>
