@@ -12,9 +12,9 @@ when a membership is created or renewed a record for the membership “period”
 recorded. Also links to contribution record if payment is taken for the membership
 or renewal e.g
 
-Term/Period 1: 1 Jan 2014 - 31 Dec 2014
-Term/Period 2: 1 Jan 2015 - 31 Dec 2015
-Term/Period 3: 1 Jan 2016 - 31 Dec 2016
+Term/Period 1: 1 Jan 2014 - 31 Dec 2014  
+Term/Period 2: 1 Jan 2015 - 31 Dec 2015  
+Term/Period 3: 1 Jan 2016 - 31 Dec 2016  
 
 
 
