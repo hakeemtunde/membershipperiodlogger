@@ -18,8 +18,3 @@ Term/Period 3: 1 Jan 2016 - 31 Dec 2016
 
 
 
-Installation
-------------
-
-The download URLs and installation instructions are available on our website:
-https://civicrm.org/download
